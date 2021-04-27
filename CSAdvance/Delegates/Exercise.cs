@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace CSAdvance.Delegates
 {
@@ -10,7 +7,21 @@ namespace CSAdvance.Delegates
         public static void Start()
         {
             var photoProcessor = new PhotoProcessor();
-            photoProcessor.Process("Image.jpg");
+            //Lets imagine this is our UI
+            var photoFilter = new PhotoFilters();
+            var photoFilterhandler = new PhotoFilterHandler(photoFilter.ApplyContrast);
+            //chain
+            photoFilterhandler+=photoFilter.ApplyBrightness;
+            //use my own filters..
+            photoFilterhandler+=Blur;
+
+            photoProcessor.Process("Image.jpg",photoFilterhandler);
+        }
+
+        //user created this filter
+        public static void Blur(Photo photo)
+        {
+            Console.WriteLine("Applying Blur effects....");
         }
     }
 }

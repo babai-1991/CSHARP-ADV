@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Delegates\Exercise.cs" />
     <Compile Include="Delegates\Photo.cs" />
+    <Compile Include="Delegates\PhotoFilterHandler.cs" />
     <Compile Include="Delegates\PhotoFilters.cs" />
     <Compile Include="Delegates\PhotoProcessor.cs" />
     <Compile Include="Generics\Book.cs" />
