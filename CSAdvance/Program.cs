@@ -6,7 +6,9 @@ namespace CSAdvance
     {
         static void Main(string[] args)
         {
-            Exercise.Start();
+            //Exercise.Start();
+
+            Delegates.Exercise.Start();
         }
     }
 }

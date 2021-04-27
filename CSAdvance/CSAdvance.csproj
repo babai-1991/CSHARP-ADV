@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Delegates\Exercise.cs" />
+    <Compile Include="Delegates\Photo.cs" />
+    <Compile Include="Delegates\PhotoFilters.cs" />
+    <Compile Include="Delegates\PhotoProcessor.cs" />
     <Compile Include="Generics\Book.cs" />
     <Compile Include="Generics\BookList.cs" />
     <Compile Include="Generics\Exercise.cs" />
