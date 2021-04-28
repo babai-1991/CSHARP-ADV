@@ -7,8 +7,8 @@ namespace CSAdvance
         static void Main(string[] args)
         {
             //Exercise.Start();
-
-            Delegates.Exercise.Start();
+            //Delegates.Exercise.Start();
+            LambdaExpression.Exercise.Start();
         }
     }
 }
