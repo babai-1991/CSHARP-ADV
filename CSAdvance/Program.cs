@@ -8,7 +8,8 @@ namespace CSAdvance
         {
             //Exercise.Start();
             //Delegates.Exercise.Start();
-            LambdaExpression.Exercise.Start();
+            //LambdaExpression.Exercise.Start();
+            ExtensionMethod.Exercise.Start();
         }
     }
 }
