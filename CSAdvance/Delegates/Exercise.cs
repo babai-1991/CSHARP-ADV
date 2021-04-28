@@ -9,7 +9,7 @@ namespace CSAdvance.Delegates
             var photoProcessor = new PhotoProcessor();
             //Lets imagine this is our UI
             var photoFilter = new PhotoFilters();
-            var photoFilterhandler = new PhotoFilterHandler(photoFilter.ApplyContrast);
+            var photoFilterhandler = new Action<Photo>(photoFilter.ApplyContrast);
             //chain
             photoFilterhandler+=photoFilter.ApplyBrightness;
             //use my own filters..
